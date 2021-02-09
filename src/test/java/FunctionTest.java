@@ -93,4 +93,18 @@ public class FunctionTest {
 
 
     }
+
+    @Test
+    public void TestMath2() {
+        try {
+            assertEquals(3, f.calculate("1*(2+1)", 1));
+        } catch (ScriptException e) {
+            System.out.println("Error");
+        }
+        catch (ArithmeticException e){
+            System.out.println("Division by 0");
+        }
+
+
+    }
 }
