@@ -41,7 +41,7 @@ public class FunctionTest {
     @Test
     public void TestSimpleMath4() {
         try {
-            assertEquals(18.1, (Double) f.calculate("(34*x)/2", 1), 0.1);
+            assertEquals(18.7, (Double) f.calculate("(34*x)/2", 1.1), 0.5);
         } catch (ScriptException e) {
             e.printStackTrace();
         }

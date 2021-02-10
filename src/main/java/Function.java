@@ -64,8 +64,10 @@ public class Function {
     }
 
     public static String AdditionalSigns(String str) {
+        System.out.println(str);
         if (str.contains("("))
             str = CutString(str);
+        System.out.println(str);
         if (str.contains("sin"))
             str = sin(str);
         if (str.contains("cos"))
@@ -77,14 +79,14 @@ public class Function {
             double num;
             int i = str.indexOf('n') + 1;
             String newStr = "";
-            while ((Character.isDigit(str.charAt(i)) || str.charAt(i) == '.') && i < str.length() - 1) {
+
+            while ((Character.isDigit(str.charAt(i)) || str.charAt(i) == '.' || str.charAt(i)=='-') && i < str.length() - 1) {
                 newStr += str.charAt(i);
                 i++;
             }
-            if (i < str.length())
+            if (i+1 == str.length())
                 if (Character.isDigit(str.charAt(i)))
                     newStr += str.charAt(i);
-
             try {
                 num = Double.parseDouble(newStr);
             } catch (NumberFormatException e) {
@@ -116,6 +118,5 @@ public class Function {
             newStr = "" + num;
             return str.replace(str.substring(str.indexOf('c'), i), newStr);
         }
-        //TODO Возведение в степень
 }
 

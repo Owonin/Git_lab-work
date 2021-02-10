@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FunctionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-09T20:48:04" hostname="LAPTOP-VDA0N6ER" time="0.592">
+<testsuite name="FunctionTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-02-10T09:52:03" hostname="LAPTOP-VDA0N6ER" time="0.7">
   <properties/>
-  <testcase name="TestMath2" classname="FunctionTest" time="0.592"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="TestMath" classname="FunctionTest" time="0.46"/>
+  <testcase name="TestSimpleMathWithDoubleParameterWithArithmeticEx" classname="FunctionTest" time="0.05"/>
+  <testcase name="TestSimpleMathWithDoubleParameter" classname="FunctionTest" time="0.016"/>
+  <testcase name="TestSimpleMathWithParameterWithScriptEx" classname="FunctionTest" time="0.043"/>
+  <testcase name="TestMath2" classname="FunctionTest" time="0.032"/>
+  <testcase name="TestSimpleMath" classname="FunctionTest" time="0.019"/>
+  <testcase name="TestSimpleMath2" classname="FunctionTest" time="0.016"/>
+  <testcase name="TestSimpleMath3" classname="FunctionTest" time="0.033"/>
+  <testcase name="TestSimpleMath4" classname="FunctionTest" time="0.028"/>
+  <system-out><![CDATA[Division by 0
+Error
+]]></system-out>
   <system-err><![CDATA[Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
 Warning: Nashorn engine is planned to be removed from a future JDK release
 ]]></system-err>
 </testsuite>

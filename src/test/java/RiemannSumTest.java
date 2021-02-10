@@ -22,7 +22,7 @@ public class RiemannSumTest {
 
     @Test
     public void SummCos(){
-        RiemannSum sum = new RiemannSum(0,2, "cos(2*(2+x))");
+        RiemannSum sum = new RiemannSum(0,2, "cos(3.14-50)");
         assertEquals(0.87,sum.calculate(),0.5);
     }
 
