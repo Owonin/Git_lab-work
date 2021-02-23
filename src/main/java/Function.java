@@ -116,6 +116,28 @@ public class Function {
             newStr = "" + num;
             return str.replace(str.substring(str.indexOf('c'), i), newStr);
         }
-        //TODO Возведение в степень
+
+    public static String exp(String str) {
+        double num;
+        int i = str.indexOf('p') + 1;
+        String newStr = "";
+        while ((Character.isDigit(str.charAt(i)) || str.charAt(i) == '.') && i < str.length() - 1) {
+            newStr += str.charAt(i);
+            i++;
+        }
+        if (i < str.length())
+            if (Character.isDigit(str.charAt(i)))
+                newStr += str.charAt(i);
+
+        try {
+            num = Double.parseDouble(newStr);
+        } catch (NumberFormatException e) {
+            num = (Integer.parseInt(newStr)) * 0.1;
+        }
+        num = Math.exp(num);
+        newStr = "" + num;
+        return str.replace(str.substring(str.indexOf('e'), i), newStr);
+    }
+
 }
 

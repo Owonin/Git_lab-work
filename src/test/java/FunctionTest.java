@@ -41,11 +41,30 @@ public class FunctionTest {
     @Test
     public void TestSimpleMath4() {
         try {
-            assertEquals(18.1, (Double) f.calculate("(34*x)/2", 1), 0.1);
+            assertEquals(17.0, (Double) f.calculate("(34*x)/2", 1.0), 0.1);
         } catch (ScriptException e) {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void Exp() {
+        try {
+            assertEquals(1.0, (Double) f.calculate("exp0", 1.0), 0.1);
+        } catch (ScriptException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void Exp2() {
+        try {
+            assertEquals(148.2, (Double) f.calculate("exp(2+3*x)", 1.0), 0.8);
+        } catch (ScriptException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     @Test
     public void TestSimpleMathWithDoubleParameter() {
